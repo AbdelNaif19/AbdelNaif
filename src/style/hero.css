@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #99d9d9;
+    color: #2c3e50;
+}
+#root{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85%;
+    height: 100vh;
+   
+}
+
+.hero-image{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 2rem;
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    border-radius: 2rem;
+}
+
+.hero-image img{
+    width: 90%;
+    height: 100%;
+}
+
+.hero-content{
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    width: 40%;
+    padding: 0 4rem 0 4rem;
+    gap: 8rem;
+}
+
+.hero-initial{
+    width: 10%;
+    height: 10%;
+}
+
+.hero-initial img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    color: whitesmoke;
+    font-weight: lighter;
+    font-weight: 3rem;
+    width: auto;
+}
+
+.hero-content h1 span{
+    display: flex;
+    font-size: 2.8rem;
+    color: #99d9d9;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.hero-content h2{
+    color: whitesmoke;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* about */
+
+.about-container{
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-title h1{
+    color: #99d9d9;
+}
+
+.about-box{
+    display: flex;
+    gap: 2rem;
+}
+
+.cooperate, .multitask, .achiever{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid #99d9d9;
+    color: whitesmoke;
+    text-align: center;
+    gap: 1.5rem;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40%;
+}
+
+.icon img{
+    object-fit: cover;
+    width: 7rem;
+    height: 7rem;
+}
