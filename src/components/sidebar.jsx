@@ -11,8 +11,8 @@ const Sidebar = () => {
             <ul>
                 <li><Link to={"/"}>Home</Link></li>
                 <li><Link to={"/about"}>About Me</Link></li>
-                <li><Link>Works</Link></li>
-                <li><Link>Contact</Link></li>
+                <li><Link to={"/work"}>Works</Link></li>
+                <li><Link to={"/contact"}>Contact</Link></li>
             </ul>
 
             <div className="sidebar-icon">
