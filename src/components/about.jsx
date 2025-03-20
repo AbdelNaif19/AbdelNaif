@@ -1,11 +1,42 @@
-import React from "react";
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import Icon1 from "../assets/cooperate-icon.png";
 import Icon2 from "../assets/multitask-icon.png";
 import Icon3 from "../assets/achiever-icon.png";
+import AB from '../assets/AB.png';
 
 const About = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <div className="about-container">
+            <div className='initial'>
+                <img src={AB} alt="" />
+    
+            <div className='burger-menu' onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? (
+                    <div className="close-icon">&times;</div> // X icon
+                ) : (
+                    <>
+                    <div className='bar'></div>
+                    <div className='bar'></div>
+                    <div className='bar'></div>
+                    </>
+                )}
+                </div>
+    
+                {/* Navigation Menu */}
+                <nav className={menuOpen ? 'nav-menu open' : 'nav-menu'}>
+                <ul>
+                    <li><Link to={"/"}>Home</Link></li>
+                    <li><Link to={"/about"}>About</Link></li>
+                    <li><Link to={"/work"}>Work</Link></li>
+                    <li><Link to={"/contact"}>Contact</Link></li>
+                </ul>
+                </nav>
+    
+            </div>
+
             <div className="about-title">
                 <h1>ABOUT ME</h1>
             </div>

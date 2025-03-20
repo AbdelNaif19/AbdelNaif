@@ -1,0 +1,209 @@
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        margin-top: 1.2rem;
+    }
+    
+    .burger-menu .bar {
+        width: 1.8rem;
+        height: 4px;
+        background-color: #d0cdc1;
+        margin: 5px;
+        transition: 0.3s;
+    }
+    
+    .close-icon {
+        position: fixed;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 100;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #99d9d9;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.open {
+        display: flex;
+        justify-content: start;
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 5rem;
+    }
+
+    .nav-menu ul li {
+        padding: 15px;
+    }
+    
+    .nav-menu ul li a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #333;
+        font-weight: 400;
+    }
+    .nav-menu ul li a:hover {
+        color: #5c5b56;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-image{
+        width: 15rem;
+        height: 15rem;
+        position: absolute;
+        margin-top: 8rem;
+        border-radius: 12rem;
+        background-color: #99d9d9;
+    }
+
+    .hero-image img{
+        border-radius: 10rem;
+    }
+
+    .hero-initial, .initial{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        margin-bottom: 35rem;
+    }
+
+    .hero-initial img, .initial img{
+        width: 10%;
+    }
+
+    .hero-content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0rem;
+
+    }
+
+    .hero-content h1, h2{
+        position: absolute;
+        margin-top: 20rem;
+    }
+
+    .hero-content h2{
+        position: absolute;
+        margin-top: 30rem;
+        font-size: 1rem;
+    }
+
+    .hero-content h1 span{
+        font-size: 2.2rem;
+    }
+
+    /* about */
+    .about-container, .work-container{
+        width: 100%;
+        gap: 0rem;
+        position: relative;
+    }
+
+    .about-container{
+        height: auto;
+        overflow-y: auto;
+    }
+    .about-title{
+        text-align: center;
+        margin-top: 40em;
+    }
+
+    .about-box{
+        flex-direction: column;
+        width: 80%;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .about-box h1{
+        font-size: 1.5rem;
+    }
+    .about-box p{
+        font-size: 0.8rem;
+    }
+
+    .cooperate, .multitask, .achiever{
+        gap: 0.5rem;
+        width: 15rem;
+        height: 20rem;
+    }
+
+    /* work */
+    .work-box{
+        height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1rem;
+    }
+    
+    .works{
+        flex-direction: column;
+    }
+
+    .work1{
+        width: 100%;
+    }
+
+    /* contact */
+    .contact-container{
+        width: 100%;
+    }
+    .top-container{
+        display: none
+    }
+    
+    .btm-container{
+        flex-direction: column;
+        text-align: center;
+        height: 80%;
+    }
+    .btm-1{
+        width: 100%;
+        margin: auto;
+    }
+    .btm-2{
+        width: 50%;
+        text-align: left;
+    }
+    .btm-2 h1{
+        text-align: center;
+    }
+    
+    .contact-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
